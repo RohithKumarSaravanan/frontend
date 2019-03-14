@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+			Phone Directory
+		</title>
+<style>
+#mytable{
+	margin:50px;
+	padding:50px;
+}
+header{
+				font-family:"Comic Sans MS";font-size:30px;color:green;background:red;text-shadow:2px 2px black;
+			}
+
+#phone{
+background :black;
+color:white;
+}
+
+#add{
+	background :#1AFF00;
+	width : 60px;color:white;border:none;font-size:20px;padding:5px;padding-left:10px;padding-right:10px;
+	height : 30px;
+	margin : 20px;
+}
+</style>
+</head>
+<body>
+
+
+<div id="idd2">
+				<center><header id="head">PHONE DIRECTORY</header></center>
+			</div><br><br>
+<button  id="add" onclick="window.location.href='add.html'">ADD</button>
+
+<table id="myTable" style="width:100%">
+  <tr>
+    <td>NAME</td>
+    <td>PHONE</td>
+  </tr>
+</table>
+<br>
+
+
+
+<script language="javascript" type="text/javascript" src="call.js">
+function myFunction(x,y) {
+  var table = document.getElementById("myTable");
+  var row = table.insertRow(1);
+  var cell1 = row.insertCell(0);
+  var cell2 = row.insertCell(1);
+  cell1.innerHTML = "x";
+  cell2.innerHTML = "y";
+}
+</script>
+
+</body>
+</html>
